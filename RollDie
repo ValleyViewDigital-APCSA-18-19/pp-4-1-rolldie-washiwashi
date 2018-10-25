@@ -1,0 +1,24 @@
+package RollDie;
+
+public class RollDie
+{
+	public int face;
+	int sides;
+	
+	public RollDie ()
+	{
+		roll();
+	}
+	
+	public int roll ()
+	{
+		face = (int)((Math.random() * (sides)) +1);
+		return face;
+	}
+	
+	public void setNewSides(int NewSides)
+	{
+		sides = NewSides;
+	}
+
+}
