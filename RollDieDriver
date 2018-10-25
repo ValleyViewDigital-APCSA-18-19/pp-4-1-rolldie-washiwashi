@@ -1,0 +1,22 @@
+package RollDie;
+
+import java.util.*;
+
+public class RollDieDriver
+{
+	public static void main (String[] args)
+	{	
+		final int ROLLS = 1;
+		int sides;
+	
+	
+	Scanner input = new Scanner (System.in);
+	
+	RollDie myDie = new RollDie();
+	System.out.println("Choose number of sides: ");
+	myDie.setNewSides(input.nextInt());
+	
+	
+	System.out.println(myDie.roll());
+	}
+}
